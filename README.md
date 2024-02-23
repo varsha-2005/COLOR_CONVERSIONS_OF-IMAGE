@@ -37,29 +37,29 @@ Split and merge HSV Image
 
 ## Program:
 
-Developed By: Mavilla Pranathi.
-Register Number: 212222240064
+Developed By: Varsha.G
+Register Number: 212222230166
 
 
 ### i) Read and display the image
-
+```
     import cv2
     image=cv2.imread('car.jpeg',1)
     image=cv2.resize(image,(400,300))
     cv2.imshow('Adithya',image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
- 
+ ```
 
 ### OUTPUT:
 
 ![image](https://github.com/MavillaPranathi/COLOR_CONVERSIONS_OF-IMAGE/assets/118343610/f801b63d-a080-4806-81eb-acf841b582a6)
 
 ### ii)Write the image
-
+```
     image=cv2.imread('car.jpeg',0)
     cv2.imwrite('d.jpeg',image)
-
+```
 
 
 ### OUTPUT:
@@ -70,11 +70,11 @@ Register Number: 212222240064
 
 
 ### iii)Shape of the Image
-
+```
     import cv2
     image=cv2.imread('car.jpeg',1)
     print(image.shape)
-
+```
  
 
 ### OUTPUT:
@@ -82,7 +82,7 @@ Register Number: 212222240064
 
       
 ### iv)Access rows and columns
-
+```
     import random
     import cv2
     image=cv2.imread('car.jpeg',1)
@@ -95,7 +95,7 @@ Register Number: 212222240064
     cv2.imshow('car part image',image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-
+```
  
 ### OUTPUT:
 
@@ -105,7 +105,7 @@ Register Number: 212222240064
       
 ### v)Cut and paste portion of image
 
- 
+ ```
    import cv2
    image=cv2.imread('car.jpeg',1)
    image=cv2.resize(image,(400,400))
@@ -115,13 +115,13 @@ Register Number: 212222240064
    cv2.waitKey(0)
    cv2.destroyAllWindows()
 
-
+```
 ### OUTPUT:
 ![output05](https://github.com/Adithya-Siddam/COLOR_CONVERSIONS_OF-IMAGE/assets/93427248/492887c4-d0f9-49e8-b46b-0c387f3e3c4d)
 
 
 ### vi) BGR and RGB to HSV and GRAY
-
+```
 import cv2
 img = cv2.imread('car.jpeg',1)
 img = cv2.resize(img,(300,200))
@@ -136,7 +136,7 @@ gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 cv2.imshow('RGB2GRAY',gray2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
+```
 
 ### OUTPUT:
 ![output06](https://github.com/Adithya-Siddam/COLOR_CONVERSIONS_OF-IMAGE/assets/93427248/7fe1630a-969f-4877-85e0-4b9fe41a0224)
@@ -146,7 +146,7 @@ cv2.destroyAllWindows()
 
 
 ### vii) HSV to RGB and BGR
-
+```
 import cv2
 img = cv2.imread('car.jpeg')
 img = cv2.resize(img,(300,200))
@@ -159,14 +159,14 @@ cv2.imshow('HSV2RGB',BGR)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-
+```
 ### OUTPUT:
 ![output08](https://github.com/Adithya-Siddam/COLOR_CONVERSIONS_OF-IMAGE/assets/93427248/4869ed16-d1e1-43a5-824c-04b52b806ee9)
 
 
 
 ### viii) RGB and BGR to YCrCb
-
+```
 import cv2
 img = cv2.imread('car.jpeg')
 img = cv2.resize(img,(300,200))
@@ -177,7 +177,7 @@ YCrCb2 = cv2.cvtColor(img, cv2.COLOR_RGB2YCrCb)
 cv2.imshow('BGR-2-YCrCb',YCrCb2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
+```
 
 ### OUTPUT:
 ![output09](https://github.com/Adithya-Siddam/COLOR_CONVERSIONS_OF-IMAGE/assets/93427248/eae7abf4-daf0-4b9f-9ae0-10b63c6a2c37)
@@ -186,7 +186,7 @@ cv2.destroyAllWindows()
 
 
 ### ix) Split and merge RGB Image
-
+```
 import cv2
 img = cv2.imread('car.jpeg',1)
 img = cv2.resize(img,(300,200))
@@ -200,7 +200,7 @@ merged = cv2.merge((B,G,R))
 cv2.imshow('Merged RGB image',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
+```
 
 ### OUTPUT:
 ![output10](https://github.com/Adithya-Siddam/COLOR_CONVERSIONS_OF-IMAGE/assets/93427248/6cb9058d-0380-4f50-9de4-7f0ed27626f9)
@@ -209,7 +209,7 @@ cv2.destroyAllWindows()
 
 
 ### x) Split and merge HSV Image
-
+```
 import cv2
 img = cv2.imread("car.jpeg",1)
 img = cv2.resize(img,(300,200))
@@ -222,7 +222,7 @@ merged = cv2.merge((H,S,V))
 cv2.imshow('Merged',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
+```
 
 ### OUTPUT:
 
